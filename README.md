@@ -1,4 +1,8 @@
-## Steps
+## Get from Dockerhub
+```
+docker run --rm stephano1234/go-fullcycle-rocks
+```
+## Steps for build manually
 #### First command:
 ```
 docker build -t stephano1234/go-fullcycle-rocks .
