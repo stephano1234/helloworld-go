@@ -2,7 +2,7 @@
 ```
 docker run --rm stephano1234/go-fullcycle-rocks
 ```
-## Steps for build manually
+## Steps to build
 #### First command:
 ```
 docker build -t stephano1234/go-fullcycle-rocks .
