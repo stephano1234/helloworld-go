@@ -1,17 +1,17 @@
 ## Get from Dockerhub
 ```
-docker run --rm stephano1234/go-fullcycle-rocks
+docker run stephano1234/helloworld
 ```
 ## Build steps
 #### First command:
 ```
-docker build -t stephano1234/go-fullcycle-rocks .
+docker build -t your-image-name .
 ```
 #### Second command:
 ```
-docker run --rm stephano1234/go-fullcycle-rocks
+docker run your-image-name
 ```
-#### Expected size for the image `stephano1234/go-fullcycle-rocks`:
+## Expected size for the images
 ```
-1.82MB
+1.85MB
 ```

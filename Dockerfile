@@ -1,16 +1,16 @@
 FROM golang:1.19 AS builder
 
-WORKDIR /usr/src/fullcycle-rocks
+WORKDIR /usr/src/helloworld
 
-RUN go mod init full-cycle-rocks
+RUN go mod init helloworld
 
 COPY . .
 
-RUN go build -v -o fullcycle-rocks .
-RUN rm Dockerfile fullcycle-rocks.go go.mod
+RUN go build -v -o helloworld .
+RUN rm Dockerfile helloworld.go go.mod
 
 FROM scratch
 
-COPY --from=builder /usr/src/fullcycle-rocks .
+COPY --from=builder /usr/src/helloworld .
 
-ENTRYPOINT [ "./fullcycle-rocks" ]
+ENTRYPOINT [ "./helloworld" ]
