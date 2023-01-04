@@ -11,7 +11,7 @@ docker build -t your-image-name .
 ```
 docker run your-image-name
 ```
-## Expected size for the images
+## Expected size for the image
 ```
 1.85MB
 ```
